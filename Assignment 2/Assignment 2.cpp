@@ -68,7 +68,6 @@ int main() {
 		Patients[i].setDoctorName(Doctors[j].getName()); // set the doctor's name to the patient
 		j++; j = j % numDoctors;
 	}
-	cout << endl;
 	// now it's time to sort the patients according to their appointments (using selection sort algorithm)
 	for (int i = 0; i < numPatients - 1; i++) { 
 		for (j = i + 1; j < numPatients; j++) {
