@@ -61,7 +61,7 @@ int main() {
 		{
 			j++; // we linearly search for available doctors by getting the index
 			j = j % numDoctors; // if the index is more than the number of doctors,
-			// get back to how many elements after the end
+			// get back to the first element and the elements after it and so forth
 		}
 		Doctors[j].addAppointment(Patients[i].getAppointment()); // add the appointment to the doctor
 		Patients[i].setDocID(Doctors[j].getID()); // set the doctor's ID to the patient
